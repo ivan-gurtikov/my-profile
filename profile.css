@@ -1,0 +1,147 @@
+/* h1= selector, fontsize= property and 36 px = value. CSS property + value = style rule*/
+/*classes such as ID and CLASS are more specific than native element such as p or h1, meaning that in case of conflicts the class will be deterministic ID is more specific than CLASS
+selectors are not equialy specific*/
+body {
+	background: #F4F7F5;
+	/*??background-color: rgb(20,20,20);??*/
+	color: rgb(50,50,50);
+	font-family: 'Playfair Display', serif;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 1.2px;
+	font-weight: 100;
+	background-image: url(im!!ges1/blockchain.jpg);
+}
+h1, h2, h3 {
+	color: #7899D4;
+	font-weight: bolder;
+}
+
+h1	/*if is among an div with an ID, we can select the id name and h1 to only select h1 of that selected id, called descendent selector*/
+	{
+	color: #6B72E1;
+	font-size: 45px;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-family: 'Grenze Gotisch', cursive;
+	letter-spacing: 5px;
+}
+
+h2	{
+	font-size: 28px;
+	font-style: italic;
+	font-family: 'Open Sans', sans-serif;
+}
+
+p {
+	font-weight: bold;
+	font-size: 20px;
+
+}
+
+
+.container {
+widows: 700px;
+margin: 40px auto;
+}
+
+.links {
+	text-decoration: none;
+}
+
+.links:hover {
+	color: #6E0E0A;
+	font-weight: bold;
+}
+
+#introduction  p {
+	margin-bottom: 30px;
+}
+/* try grappe : 9684A1
+		blue: 3F84E5
+		malachite: 04E762
+		cyber grape: 4A306D 
+		azure: 3185FC
+		sizzling red: FF5A5F*/
+/*allows to select the links only when they are hoverd*/
+	
+
+.img-circle {
+	height: 240px;
+	width: 240px;
+	padding: 1px;
+	border-radius: 50%;
+}
+
+.btn-red {
+	font-family: 'Open Sans', sans-serif;
+	text-decoration: none;
+	background-color: #FF5A5F;
+	color: white;
+	font-weight: bold;
+	padding: 15px 20px;
+}
+
+.btn-red:hover {
+	color: white;
+	background-color: black;
+	font-weight: bold;
+}
+
+.card-white {
+	background-color: white;
+	height: auto;
+	width: 650px;
+	padding: 25px;
+	margin: 25px auto; /*set automatic margin for left and right, otherwise, can add up to 4 different values, GOING CLOCKWISE*/
+	text-align: center;
+	border-radius: 4px;
+	box-shadow: 0 15px 35px rgba(0,0,0,.15);
+}
+
+
+.list-inline {
+	list-style: none;
+	padding-left: 0px;
+}
+
+.list-inline li {
+	display: inline;
+	padding: 10px;
+}
+
+/*classic div design:
+background: white;
+padding: 30px;
+border-radius: 4px;
+box-shadow: 0 15px 35px rgba(50,50,93,.1);
+ addition
+margin: 30px	5px;
+padding: 10px	20px;
+border: 2px	solid	red; OR CAN BE SPECIFIC WITH EACH SIDE OF A BORDER SEPARATELY
+border-radius: 10px;
+box-shadow: 10px	20px	30px	blue;
+ex borders:
+border-top: 1px solid red;
+	border-right: 2px dotted black;
+	border-bottom: 1px dashed green;
+	border-left: 2px dotted black;*/
+
+div /* one div or element can have SEVERAL CLASSES or an additionnal ID*/
+	{
+
+}
+
+@media (max-width: 500px) {
+	.container {
+		background-color: red;
+		width: 400px;
+	}
+}
+
+@media (max-width: 760px) {
+	.container {
+		background-color: red;
+		width: 600px;
+	}
+}
